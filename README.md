@@ -37,6 +37,10 @@ Obs.: you can create a postgres container in [railway][btn-railway]
 ```bash
     git clone https://github.com/ruanmoreiraofc/fullstack-sva-tech-express_react.git
 ```
+###### - access the folder
+```bash
+    cd fullstack-sva-tech-express_react
+```
 ###### - clone the submodules
 ```bash
     git submodule update --init --recursive
@@ -44,12 +48,16 @@ Obs.: you can create a postgres container in [railway][btn-railway]
 
 ###### - first create backend env file:
 Create `./backend/.env` in same shape as `./backend/.env.example`
-
-Obs.: Remove `DB_HOST` from env file if using docker
 ###### - second create frontend env file:
 Create `./frontend/.env` in same shape as `./frontend/.env.example`
 
-###### - then run
+##### Additional setup - Docker ONLY
+
+###### - fix backend env file:
+
+Remove `DB_HOST` from env file `./backend/.env`
+
+###### - then merge both env files:
 ```bash
     bash ./scripts/merge_env.bash
 ```

@@ -44,6 +44,8 @@ Obs.: you can create a postgres container in [railway][btn-railway]
 
 ###### - first create backend env file:
 Create `./backend/.env` in same shape as `./backend/.env.example`
+
+Obs.: Remove `DB_HOST` from env file if using docker
 ###### - second create frontend env file:
 Create `./frontend/.env` in same shape as `./frontend/.env.example`
 
